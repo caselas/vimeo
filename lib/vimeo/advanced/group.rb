@@ -56,6 +56,11 @@ module Vimeo
       create_api_method :leave,
                         "vimeo.groups.leave",
                         :required => [:group_id]
+                        
+      # Remove a video from a group.
+      create_api_method :remove_video,
+                        "vimeo.groups.removeVideo",
+                        :required => [:group_id, :video_id]
 
     end # Group
   end # Advanced
